@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Contenedor principal del fragmento -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragment.TypeTaskFragment"
+    android:fitsSystemWindows="true"
+    android:background="@color/white">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewtype"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        tools:listitem="@layout/item_task"
+        android:visibility="gone" />
+
+>
+    <TextView
+        android:id="@+id/emptyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/oh_de_momento_no_tienes_ninguna_tarea_quieres_a_adir_una"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        android:layout_margin="20dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addtask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/a_adir_tarea"
+        android:src="@drawable/baseline_add_24"
+        android:layout_marginStart="350dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="bottom" />
+
+</FrameLayout>

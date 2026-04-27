@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragment.MyTaskFragment"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:layout_marginTop="40dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/url_image"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/image_24"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:paddingStart="60dp"
+                    android:id="@+id/etPhotoUrl"
+                    android:layout_width="match_parent"
+                    android:textAppearance="?attr/textAppearanceCaption"
+                    android:maxLines="4"
+                    android:minLines="4"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/imgPhoto"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:src="@drawable/image_24"
+                android:contentDescription="@string/imagen_tienda"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- Campo para el nombre de la tarea -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/task_name"
+            app:helperText="Required"
+            app:counterMaxLength="50"
+            app:counterEnabled="true"
+            app:startIconDrawable="@drawable/task"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:paddingStart="60dp"
+                android:id="@+id/etname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:text="@string/type_of_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:entries="@array/task_status_array"/>
+        <Spinner
+            android:id="@+id/spinnerOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/description"
+            app:helperText="Required"
+            app:counterMaxLength="50"
+            app:counterEnabled="true"
+            app:startIconDrawable="@drawable/task"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:paddingStart="60dp"
+                android:id="@+id/etdescrip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/date"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:clickable="true"
+                android:inputType="none"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/direction">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/latitude">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etLatitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/longitude">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etLongitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal|numberSigned"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

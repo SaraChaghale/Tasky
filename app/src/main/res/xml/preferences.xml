@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pantalla de configuración de preferencias -->
+<androidx.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Categoría de configuración de volumen -->
+    <PreferenceCategory
+        android:title="@string/preference_volume_title"
+    android:icon="@drawable/baseline_volume_up_24">
+
+    <!-- Control deslizante para ajustar el volumen de notificaciones -->
+    <SeekBarPreference
+        android:key="volume_notifications"
+    android:title="@string/preference_volume_title"
+    android:defaultValue="50"
+    android:max="100"
+    />
+</PreferenceCategory>
+
+    <!-- Categoría de configuración de idioma -->
+<PreferenceCategory
+    android:title="@string/preference_language_title"
+    android:icon="@drawable/language_24">
+
+    <!-- Lista desplegable para seleccionar el idioma -->
+<ListPreference
+android:key="language"
+    android:title="@string/preference_language_title"
+    android:defaultValue="@string/default_language"
+    android:entries="@array/language_entries"
+    android:entryValues="@array/language_values"
+    android:summary="@string/preference_language_summary"
+    android:selectable="true" /> <!-- Permite seleccionar un elemento -->
+    </PreferenceCategory>
+
+    </androidx.preference.PreferenceScreen>

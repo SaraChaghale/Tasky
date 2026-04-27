@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tasky</string>
+    <string name="hello_blank_fragment">Hola fragmento en blanco</string>
+    <string name="open_nav">abrir_nav</string>
+    <string name="close_nav">cerrar_nav</string>
+    <string name="preference_volume_title">Volumen de notificaciones</string>
+    <string name="preference_music_title">Preferencias de música</string>
+    <string name="preference_language_title">Idioma</string>
+    <string name="default_language">Idioma por defecto</string>
+    <string name="preference_language_summary">Preferencias de idioma</string>
+
+
+    <string-array name="language_values">
+        <item>es</item>
+        <item>en</item>
+    </string-array>
+    <string-array name="language_entries">
+        <item>Español</item>
+        <item>Inglés</item>
+    </string-array>
+
+    <string name="title_activity_maps">Actividad de Mapas</string>
+    <string name="edi_store_title">Editar tarea</string>
+    <string name="my_task_lists">MIS LISTAS DE TAREAS</string>
+    <string name="family">Familia</string>
+    <string name="relation">Relaciones</string>
+    <string name="friends">Amigos</string>
+    <string name="self_care">Cuidado Personal</string>
+    <string name="home">Hogar</string>
+    <string name="work">Trabajo</string>
+    <string name="funny">Diversión</string>
+    <string name="study">Estudios</string>
+    <string name="other">Otro</string>
+    <string name="type_of_task">Tipo de tarea</string>
+    <string name="description">Descripción</string>
+    <string name="date">Fecha</string>
+    <string name="direction">Dirección</string>
+    <string name="latitude">Latitud</string>
+    <string name="longitude">Longitud</string>
+    <string name="task">Tarea</string>
+    <string name="img_task">Imgen Tarea</string>
+    <string name="name_gmail_com">nombre@gmail.com</string>
+    <string name="my_name">Mi nombre</string>
+    <string name="my_list">Mi Lista</string>
+    <string name="completed_task">Tareas Completadas</string>
+    <string name="all_task">Todas las Tareas</string>
+    <string name="save">Guardar</string>
+    <string name="delete">Borrar</string>
+    <string name="settings">Ajustes</string>
+    <string name="exit">Salir</string>
+    <string name="search">Buscar ..</string>
+    <string name="search_task">Buscar ..</string>
+    <string name="a_adir_tarea">Añadir tarea</string>
+    <string name="DeleteTask">Delete Task</string>
+    <string name="OK">Vale</string>
+    <string name="Cancel">Cancelar</string>
+    <string name="aresure">¿Seguro que quieres eliminar esta tarea?</string>
+    <string name="modify">Tarea modificada correctamente</string>
+    <string name="TaskEliminated">Tarea eliminada</string>
+    <string name="AddTask">Tarea añadida correctamente</string>
+    <string name="aqu_ir_la_cita">Aquí irá la cita</string>
+    <string name="Nosepudoobtenerlacita">No se pudo obtener la cita</string>
+    <string name="your_tasks_ubications">Ubicaciones de tus tareas</string>
+    <string name="add_store_title">Añadir tarea</string>
+    <string name="oh_de_momento_no_tienes_ninguna_tarea_quieres_a_adir_una">Oh, de momento no tienes ninguna tarea, ¿quieres añadir una?</string>
+    <string name="mytasklist">Mis listas</string>
+    <string name="tasky">Tasky</string>
+    <string name="welcome_to_tasky">WELCOME TO TASKY</string>
+    <string name="url_image">URL image</string>
+    <string name="imagen_tienda">Imagen Tienda</string>
+    <string name="task_name">Task name</string>
+
+
+    <string-array name="task_status_array">
+        <item>Familia</item>
+        <item>Relaciones</item>
+        <item>Amigos</item>
+        <item>Cuidado personal</item>
+        <item>Hogar</item>
+        <item>Trabajo</item>
+        <item>Diversión</item>
+        <item>Estudios</item>
+        <item>Otro</item>
+
+    </string-array>
+</resources>
